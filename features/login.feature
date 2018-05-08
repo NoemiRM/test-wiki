@@ -6,7 +6,7 @@ Feature: Login as user
   Scenario: User access to web application
     Given An user is in the web site
     When the user enter credentials to sign in with the following credentials:
-      | user | user |
-      | pass | pass |
+      | user | pilar07   |
+      | pass | pilar1985 |
     Then the user should have see "Pilar07" as name user
 
