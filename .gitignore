@@ -5,6 +5,10 @@
 
 .npm-debug.log
 
+Gemfile.lock
+
+.idea/*
+
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
@@ -88,6 +92,7 @@ build-iPhoneSimulator/
 /.bundle/
 /vendor/bundle
 /vendor/
+vendor/*
 /lib/bundler/man/
 
 # for a library or gem, you might want to ignore these files since the code is
