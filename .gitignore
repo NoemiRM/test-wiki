@@ -8,6 +8,10 @@
 Gemfile.lock
 
 .idea/*
+.idea/
+.idea/.rakeTask
+.idea/test-wiki.iml
+.idea/workspace.xml
 
 # User-specific stuff:
 .idea/workspace.xml
