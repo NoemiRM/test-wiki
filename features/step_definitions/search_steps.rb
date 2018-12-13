@@ -1,14 +1,15 @@
-Given(/^An user is in the web site$/) do
-  @browser.goto "https://es.wikipedia.org/wiki/Wikipedia:Portada"
+Given(/^An user is on search Page$/) do
+  @browser.goto "https://es.wikipedia.org/w/index.php?search"
 end
 
-And(/^the user enter credentials to sign in with the following credentials:$/) do |table|
-  access = table.transpose.hashes.first
-  on(Login_Page).start_login
-  on(Login_Page).user_login(access['user'],access['pass'])
+And(/^User search "([^"]*)"$/) do |data|
+  on(SearchPage).search_something(data)
 end
 
-And(/^the user should have see "([^"]*)" as name user$/) do |name_user|
-  on(Login_Page).get_name_user.to_s.should == name_user
+And(/^Search Page shows results with "([^"]*)"$/) do |data|
+  auxResult = on(SearchPage).get_results_current_page
+  auxResult.each do |result|
+    result.upcase.should include(data.upcase)
+  end
 
 end
