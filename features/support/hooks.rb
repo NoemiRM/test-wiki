@@ -1,4 +1,4 @@
-require 'watir'
+require 'webdrivers'
 
 Before do |scenario|
   DataMagic.load_for_scenario(scenario)
