@@ -1,3 +1,4 @@
+@api
 Feature: User requests the weather
   As a registered user
   I request information about the weather

@@ -1,3 +1,4 @@
+@web
 Feature: Login as user
   As a user with authorization
   I want to access to application
